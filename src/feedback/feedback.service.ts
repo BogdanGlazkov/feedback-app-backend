@@ -1,5 +1,5 @@
-import { InjectModel } from "@nestjs/sequelize";
 import { Injectable } from "@nestjs/common";
+import { InjectModel } from "@nestjs/sequelize";
 import { Feedback } from "./feedback.model";
 import { createFeedbackDto } from "./dto/create-feedback.dto";
 
