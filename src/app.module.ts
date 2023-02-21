@@ -20,6 +20,7 @@ import { Feedback } from "./feedback/feedback.model";
       database: process.env.POSTGRES_DB,
       models: [Feedback],
       autoLoadModels: true,
+      synchronize: true,
     }),
     FeedbackModule,
   ],

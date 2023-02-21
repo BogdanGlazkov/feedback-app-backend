@@ -1,6 +1,7 @@
 import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 interface FeedbackCreationAttrs {
+  name: string;
   email: string;
   text: string;
 }
@@ -17,6 +18,12 @@ export class Feedback extends Model<Feedback, FeedbackCreationAttrs> {
   })
   id: number;
 
+  @Column({
+    type: DataType.STRING,
+    allowNull: false,
+  })
+  name: string;
+  
   @Column({
     type: DataType.STRING,
     allowNull: false,
